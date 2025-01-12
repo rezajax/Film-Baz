@@ -2,7 +2,20 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("com.diffplug.spotless") version "7.0.1"
+
 }
+spotless {
+  kotlin {
+    target("**/*.kt")
+    ktlint()   // has its own section below
+  }
+  kotlinGradle {
+    target("*.gradle.kts") // default target for kotlinGradle
+    ktlint() // or ktfmt() or prettier()
+  }
+}
+
 
 android {
     namespace = "ir.rezajax.filmbaz"
