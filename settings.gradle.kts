@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Film Baz"
 include(":app")
- 
+include(":data:model")
+include(":data:network")
