@@ -23,3 +23,4 @@ rootProject.name = "Film Baz"
 include(":app")
 include(":data:model")
 include(":data:network")
+include(":data:api:tmdb")

@@ -2,12 +2,16 @@ package ir.rezajax.data.network
 
 import okhttp3.OkHttpClient
 import okhttp3.Request
+import retrofit2.http.GET
 
 interface TmdbMoviesService {
 
+  @GET("movie/{movie_id}")
+  suspend fun getMovieDetails(movieId: Int): TmdbMovieDetailsResponse
 }
 
 
+/*
 val client = OkHttpClient()
 
 val request = Request.Builder()
@@ -19,3 +23,4 @@ val request = Request.Builder()
 
 val response = client.newCall(request).execute()
 
+*/
