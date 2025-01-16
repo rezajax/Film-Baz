@@ -5,6 +5,7 @@
       <module name="Film_Baz.app" target="21" />
       <module name="Film_Baz.data.api.tmdb" target="21" />
       <module name="Film_Baz.data.network" target="21" />
+      <module name="Film_Baz.data.tmdb-movies" target="21" />
     </bytecodeTargetLevel>
   </component>
 </project>

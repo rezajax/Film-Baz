@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "ir.rezajax.data.api.tmdb"
+    namespace = "ir.rezajax.data.tmdb.movies"
     compileSdk = 35
 
     defaultConfig {
@@ -34,8 +34,7 @@ android {
 
 dependencies {
 
-    implementation(project(":data:model"))
-    implementation(project(":data:network"))
+    implementation(project(":data:tmdb"))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

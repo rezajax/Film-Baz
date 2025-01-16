@@ -10,5 +10,5 @@ data class VideoThumbnail (
 
 data class VideoId (
   val tracktId: Int?,
-  val tmdbId: Int?,
+  val tmdbId: Long?,
 )
